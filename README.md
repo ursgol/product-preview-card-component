@@ -16,4 +16,3 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - Website - [ursgol](https://ursgol.github.io/product-preview-card-component/)
 - Frontend Mentor - [@ursgol](https://www.frontendmentor.io/profile/ursgol)
-*
