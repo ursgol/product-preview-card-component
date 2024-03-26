@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: hsl(158, 36%, 37%);
+    --dark-primary-color: hsl(158, 23%, 27%);
+    --secondary-color: hsl(30, 38%, 92%);
+    --neutral-very-dark-blue-color:  hsl(212, 21%, 14%);
+    --neutral-dark-grayish-blue-color: hsl(228, 12%, 48%);
+    --neutral-white-color:hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Montserrat', 'Fraunces', 'sans-serif';
+    font-size: 14px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+
+
+
+
+main img{
+    border-radius: 10px 10px 0 0;
+}
+
+.image-desktop{
+    display: none;
+}
+
+article{
+    background-color: var(--neutral-white-color);
+    padding: 6%;
+    border-radius: 0 0 10px 10px;
+}
+h1{
+    font-family: 'Fraunces';
+    font-size: 2rem;
+}
+
+h6{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: .25rem;
+    color: var(--neutral-dark-grayish-blue-color);
+    
+}
+
+.text{
+    margin-top:20px;
+    line-height: 1.5rem;
+}
+
+.prices{
+    margin-top: 20px;
+    font-family: 'Fraunces';
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.prices span{
+    font-family: 'Montserrat';
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--neutral-darkgrayish-blue-color);
+}
+
+.btn-cart{
+    background-color: var(--primary-color);
+    color: var(--neutral-white-color);
+    font-weight: 700;
+    padding: .6rem 5.5rem;
+    margin: 3%;
+    margin-left:0;
+    border-radius: 7px;
+    border: none;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.btn-cart:hover{
+    background-color: var(--dark-primary-color);
+}
+
+
+.icon-cart{
+    padding: 0 .4rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    main{
+        max-width: 280px;
+    }
+
+    .btn-cart{
+        padding: .6rem 4.5rem;
+
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+ main{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .image-desktop{
+    display: inline;
+    max-height: 480px;
+ }
+ .image-mobile{
+    display: none;
+ }
+ article{
+    min-height: 480px;
+ }
+}
